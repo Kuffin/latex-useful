@@ -18,9 +18,15 @@
 
 % todomacros
 \newcommand{\todo}[1]{\textcolor{red}{\textbf{TODO }\texttt{#1}}}
-\newcommand{\todolist}[1]{\textcolor{red}{
-    \textbf{\underline{TODOLIST:}}
-    \texttt{\begin{itemize}#1\end{itemize}}
+\newcommand{\todolist}[1]{
+    \textcolor{red}{
+        \textbf{\underline{TODOLIST:}}
+        \texttt{
+            \begin{itemize}
+                #1
+            \end{itemize}
+        }
+    }
 }
 
 
